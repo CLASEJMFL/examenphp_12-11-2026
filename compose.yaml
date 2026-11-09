@@ -1,7 +1,7 @@
 services:
   web:
     build: .
-    container_name: php_web
+    container_name: php_examen_jose
     ports:
       - "8080:80"
     volumes:
@@ -11,7 +11,7 @@ services:
 
   db:
     image: mysql:8.4
-    container_name: mysql_db
+    container_name: mysql_examen_jose
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
